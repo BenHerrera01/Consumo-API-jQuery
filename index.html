@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Encuentra tu SuperHero</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Header que contiene el navbar junto a la imagen logo -->
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0"><img src="assets/img/favicon.ico" alt=""> SuperHero</span>
+    </nav>
+  </header>
+
+  <!-- Sección de la página que contiene una imagen y un formulario para el ingreso de id del superheroe -->
+  <section>
+    <div class="container">
+      <div class="caja1">
+        <img src="assets/img/sh1.jpg" id="img1" alt="">
+        <form class="form" id="formulario">
+          <div class="form-group">
+            <h2>Encuentra tu SuperHero</h2>
+            <label for="exampleInputEmail1">Ingresa el numero del SuperHero a buscar:</label>
+            <input type="text" class="form-control" id="buscador">
+          </div>
+          <button id="buscar" class="btn btn-primary">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de la página que contiene los card con la información del superheroe encontrado -->
+  <section>
+    <div class="row" id="caja2" style="display: none;">
+      <div class="col-12 col-sm-6">
+        <h4 class="text-center pt-2">SuperHero Encontrado</h4>
+        <div class="card" id="heroe">
+          <div class="card-body">
+            <img id="imagen" src="" alt="">
+            <p id="nombre">Nombre: </p>
+            <p id="conexiones"></p>
+            <p id="publicador"></p>
+            <hr>
+            <p id="ocupacion"></p>
+            <hr>
+            <p id="aparicion"></p>
+            <hr>
+            <p id="altura"></p>
+            <hr>
+            <p id="peso"></p>
+            <hr>
+            <p id="alias"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6">
+        <div class="card" id="card_grafico">
+          <div id="chartContainer" style="width: 100%;">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Alertas de error que están ocultas por defecto-->
+  <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="modal-error">
+    <strong>Error!</strong> Has ingresado un dato no numérico
+  </div>
+
+  <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="modal-error2">
+    <strong>Error!</strong> Ha habido un problema al generar solicitud
+  </div>
+
+
+
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>

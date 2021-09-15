@@ -1,0 +1,35 @@
+.container{
+  text-align: center;
+}
+.card{
+  max-width: 100%;
+
+}
+
+label{
+  display: inline;
+  margin: auto;
+}
+
+.card-body p#nombre{
+  font-size: 1.2rem;
+}
+#formulario{
+  width: 100%;
+  text-align: left;
+}
+
+#caja2{
+
+}
+
+#img1{
+  width: 60%;
+}
+
+#imagen{
+  vertical-align: top;
+  width: 50%;
+  float: left;
+  margin-right: 1.2rem;
+}
